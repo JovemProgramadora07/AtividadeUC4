@@ -1,0 +1,19 @@
+﻿@page "/"
+
+<h3>Registro de Faltas</h3>
+
+<p>Total de faltas: @TotalFaltas</p>
+
+<button class="btn btn-primary" onclick="AumentarFaltas">
+    Adicionar Falta
+</button>
+
+@code {
+    public int TotalFaltas = 0;
+
+    public void AumentarFaltas()
+    {
+        TotalFaltas++;
+        Console.WriteLine($"O valor agora é: {TotalFaltas}");
+    }
+}
